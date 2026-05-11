@@ -1,0 +1,22 @@
+Algoritmo "posicao inserir"
+    Var
+    vet:vetor[1..100]  de inteiro 
+n, i, valor, pos: inteiro 
+Inicio
+escreval("Inserir o tamanho do vetor")
+leia (n)
+para i de 1 ate n faca
+escreval ("vet[",i,"]")
+leia(vet[i])
+fimpara 
+escreval ("Digite o valor")
+leia(valor)
+pos<-n+1
+para i de 1 ate n faca 
+se vet[i]>=valor entao
+pos<-i
+interrompa
+fimse 
+fimpara 
+escreval(" inserir na posicao ", pos)
+fimalgoritmo 
